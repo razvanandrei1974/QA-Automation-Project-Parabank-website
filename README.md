@@ -13,7 +13,20 @@ Se deschide un fișier _.feature_ pentru a defini scenariile de testare, atat pe
 Am definit scenariile de testare pentru diferite cazuri de utilizare, cum ar fi:
 
 ▶️ Login cu succes utilizând credențiale valide.
-![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/088896cf-7d47-4acd-86ed-3c8491e43b7a)
+```markdown
+Feature: Login Feature
+
+  Background:
+    Given I am on the login page
+
+  @first
+  Scenario: Login with wrong credentials
+
+    When I enter "jhon1234" in username field
+    And I enter "demo" in password field
+    And I press the login button
+    Then I should see an error message
+
 
 ▶️ Login eșuat cu credențiale invalide.
 
