@@ -14,6 +14,7 @@ Am definit scenariile de testare pentru diferite cazuri de utilizare, cum ar fi:
 
 ▶️ Login cu succes utilizând credențiale valide.
 ```markdown
+```python
 Feature: Login Feature
 
   Background:
@@ -66,7 +67,7 @@ class LoginPage(Browser):
 
     def get_error_message(self):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
-```
+
 
 Folosește Selenium pentru a automatiza acțiunile de navigare și interacțiune cu elementele din interfața web.
 Exemplu de pași de testare pentru login ar putea fi:
