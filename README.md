@@ -25,7 +25,8 @@ Validarea mesajelor de eroare pentru câmpurile obligatorii la login și înregi
 📩 Implementarea pasilor de testare:
 
 Pentru fiecare scenariu definit în fișierul .feature, implementează pașii de testare în fișierul steps.py.
-```
+```markdown
+```python
 from selenium.webdriver.common.by import By
 
 from browser import Browser
