@@ -75,7 +75,6 @@ Navigare către pagina de login.
 Introducerea numelui de utilizator și a parolei.
 Apăsarea butonului de login.
 Validarea succesului sau eșecului login-ului în funcție de rezultatul așteptat.
-Configurare pentru rularea testelor:
 
 ```markdown
 import time
@@ -110,17 +109,22 @@ def step_impl(context):
 def steps_impl(context):
     context.LoginPage.click_login_button()
 ```
+
+### 📌 _Rularea testelor:_
 ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/d02d5f8c-a126-4376-bbb7-a3a7362049f4)
 
 
-Asigură-te că fiecare scenariu are o stare inițială bine definită, de exemplu, fiecare test ar trebui să înceapă de pe pagina de start a aplicației.
-Configurarea Selenium WebDriver pentru a interacționa cu browser-ul dorit (de exemplu, Chrome, Firefox etc.).
-Poți folosi parametri de configurare pentru a seta URL-ul aplicației Parabank, numele de utilizator și parola într-un mod flexibil.
-Rularea testelor:
+### _Raportare și remediere:_
+Dupa rularea testestelor din doua scenarii:
+  * Dupa rularea testelor pe meniul Login am raportat 5/5 teste passed .
+    ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/750a93a4-5681-443d-8594-c3c5a2825368)
+    
+  - Dupa rularea testelor pe meniul Register am raportat 12 teste passed si un test failed .
+    ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/d2226e90-1fbf-4eca-bd2c-90b57af38a53)
+    Testul failed este pentru afisarea mesajului dupa ce dam clik pe butonul Register.
 
-Folosește Behave pentru a rula testele definite.
-Asigură-te că rularea testelor afișează rezultatele testelor și orice mesaje de eroare sau avertismente.
-Raportare și remediere:
+  
+
 
 Interpretează rezultatele testelor și identifică orice erori sau probleme.
 Remediază problemele întâlnite și retestează pentru a te asigura că aplicația funcționează corect conform specificațiilor.
