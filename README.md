@@ -378,7 +378,7 @@ Severitate/Prioritate
 * Tip : PC Desktop Dell Optiplex
 + OS: Windows 11
 - Tester: Ungar Razvan
-* Software version: [The version of the software which is being tested, and in which the bug has appeared.](https://parabank.parasoft.com/parabank/db.htm)
+* Software version: https://parabank.parasoft.com 
 + Connection Strength: Nu
 - Rate of Reproduction: 2
 
