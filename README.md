@@ -117,9 +117,10 @@ Dupa rularea testestelor din doua scenarii:
   * Dupa rularea testelor pe meniul Login am raportat 5/5 teste passed .
     ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/750a93a4-5681-443d-8594-c3c5a2825368)
 
-#📌 Pentru testarea meniului REGISTER am parcurs urmatorii pasi:
+# 📌 Pentru testarea meniului REGISTER am parcurs urmatorii pasi:
 
-##📌 Am creat register.feature
+## 📌 Am creat register.feature
+
 ```
 markdown
 Feature: Register Feature
@@ -147,7 +148,8 @@ Feature: Register Feature
     Then I should see an error message
 ```
 
-##📌 Am creat register_page 
+##📌 Am creat register_page .
+
 ```
 markdown
 from selenium.webdriver.common.by import By
@@ -222,7 +224,8 @@ class RegisterPage(Browser):
     def get_message(self):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
 ```
-##📌 Am creat steps_register
+## 📌 Am creat steps_register
+
 ```
 markdown
 import time
@@ -309,7 +312,9 @@ def step_impl(context):
     assert expected_error_message in actual_error_message
 
 ```
-##📌 Am creat fisierul python browser.py
+
+## 📌 Am creat fisierul python browser.py
+
 ```
 markdown
 from selenium import webdriver
@@ -324,7 +329,8 @@ class Browser:
         self.driver.quit()
 ```
 
-##📌 Am creat fisierul python environment.py
+## 📌  Am creat fisierul python environment.py
+
 ```
 markdown
 from browser import Browser
@@ -339,6 +345,7 @@ def before_all(context):
 
 def after_all(context):
     context.browser.close()
+
 ```
     
     
