@@ -148,7 +148,7 @@ Feature: Register Feature
     Then I should see an error message
 ```
 
-##📌 Am creat register_page .
+## 📌 Am creat register_page .
 
 ```
 markdown
