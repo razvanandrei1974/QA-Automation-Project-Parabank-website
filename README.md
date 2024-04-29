@@ -115,7 +115,7 @@ def steps_impl(context):
 ### _Raportare și remediere:_
 Dupa rularea testestelor din doua scenarii:
   * Dupa rularea testelor pe meniul Login am raportat 5/5 teste passed .
-    ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/750a93a4-5681-443d-8594-c3c5a2825368)
+  
 
 # 📌 Pentru testarea meniului REGISTER am parcurs urmatorii pasi:
 
