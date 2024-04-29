@@ -363,7 +363,7 @@ Dupa rularea testelor trebuie raportat un bug care apare cand dam click pe buton
 
 ## 📌 BUG Report
 
-ID-ul : Buton Register din meniul Reister
+ID-ul : Buton Register din meniul Register
 
 Rezultatul așteptat : Cand dam click pe butonul Register ar trebui sa afiseze mesajul **" Inregistrare reusita. Bine ai venit : Utilizator"**
 Rezultatul real : Cand dam click pe butonul Register afiseaza mesajul **"ERROR MESSAGE "**
