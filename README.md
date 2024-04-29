@@ -375,12 +375,12 @@ Severitate/Prioritate
 2. Severitate : _Majora_
 3. Prioritate : _Ridicata_
 
-Tip : PC Desktop Dell Optiplex
-OS: Windows 11
-Tester: Ungar Razvan
-Software version: [The version of the software which is being tested, and in which the bug has appeared.](https://parabank.parasoft.com/parabank/db.htm)
-Connection Strength: Nu
-Rate of Reproduction: 2
+* Tip : PC Desktop Dell Optiplex
++ OS: Windows 11
+- Tester: Ungar Razvan
+* Software version: [The version of the software which is being tested, and in which the bug has appeared.](https://parabank.parasoft.com/parabank/db.htm)
++ Connection Strength: Nu
+- Rate of Reproduction: 2
 
 
 
