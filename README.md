@@ -1,4 +1,4 @@
-# QA-Automation-Project-Parabank-website 🔄( Under Construction)
+# QA-Automation-Project-Parabank-website 🔄
 
 📍 Am creat planul de testare automată cu Behave pentru meniul de _"Login"_ și meniul _"Register"_ pentru aplicația Parabank. 
 📍 Am folosit Selenium pentru a automatiza acțiunile de navigare și interacțiune cu interfața web. 
@@ -347,14 +347,15 @@ def after_all(context):
     context.browser.close()
 
 ```
-    
+
+## 📌 Am rulat testele cu comnda **behave -f html -o behave-reportR1.html** iar rezultatele au fost exportate intr-un fisier extern HTML 
     
   - Dupa rularea testelor pe meniul Register am raportat 12 teste passed si un test failed .
+    
     ![image](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/d2226e90-1fbf-4eca-bd2c-90b57af38a53)
     Testul failed este pentru afisarea mesajului dupa ce dam clik pe butonul Register.
 
   
-
 
 ## 📌 Concluzii -interpretare rezultate
 
