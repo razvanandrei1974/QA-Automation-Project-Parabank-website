@@ -126,6 +126,8 @@ Dupa rularea testestelor din doua scenarii:
   
 
 
-Interpretează rezultatele testelor și identifică orice erori sau probleme.
-Remediază problemele întâlnite și retestează pentru a te asigura că aplicația funcționează corect conform specificațiilor.
-Acest plan de testare automată cu Behave ar trebui să îți ofere un început pentru a automatiza testarea meniului de login și de înregistrare pentru aplicația Parabank
+## 📌 Concluzii -interpretare rezultate
+
+Dupa rularea testelor 
+
+
