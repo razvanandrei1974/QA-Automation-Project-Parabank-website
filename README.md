@@ -361,4 +361,31 @@ def after_all(context):
 
 Dupa rularea testelor trebuie raportat un bug care apare cand dam click pe butonul register.
 
+## 📌 BUG Report
+
+ID-ul : Buton Register din meniul Reister
+
+Rezultatul așteptat : Cand dam click pe butonul Register ar trebui sa afiseze mesajul **" Inregistrare reusita. Bine ai venit : Utilizator"**
+Rezultatul real : Cand dam click pe butonul Register afiseaza mesajul **"ERROR MESSAGE "**
+
+![BUG](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/1fc13578-125d-46a2-919f-633f52fa973a)
+
+Severitate/Prioritate
+1. ID-ul Buton Register din meniul Register
+2. Severitate : _Majora_
+3. Prioritate : _Ridicata_
+
+Tip : PC Desktop Dell Optiplex
+OS: Windows 11
+Tester: Ungar Razvan
+Software version: [The version of the software which is being tested, and in which the bug has appeared.](https://parabank.parasoft.com/parabank/db.htm)
+Connection Strength: Nu
+Rate of Reproduction: 2
+
+
+
+
+
+
+
 
