@@ -374,6 +374,7 @@ Severitate/Prioritate
 1. ID-ul Buton Register din meniul Register
 2. Severitate : _Majora_
 3. Prioritate : _Ridicata_
+4. Status : _**Amanat**_
 
 * Tip : PC Desktop Dell Optiplex
 + OS: Windows 11
