@@ -1,4 +1,4 @@
-# QA-Automation-Project-Parabank-website 🔄
+# _**QA-Automation-Project-Parabank-website**_ 🔄
 
 📍 Am creat planul de testare automată cu Behave pentru meniul de _"Login"_ și meniul _"Register"_ pentru aplicația Parabank. 
 📍 Am folosit Selenium pentru a automatiza acțiunile de navigare și interacțiune cu interfața web. 
