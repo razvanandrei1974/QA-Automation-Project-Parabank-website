@@ -365,8 +365,8 @@ Dupa rularea testelor trebuie raportat un bug care apare cand dam click pe buton
 
 ID-ul : Buton Register din meniul Register
 
-Rezultatul așteptat : Cand dam click pe butonul Register ar trebui sa afiseze mesajul **" Inregistrare reusita. Bine ai venit : Utilizator"**
-Rezultatul real : Cand dam click pe butonul Register afiseaza mesajul **"ERROR MESSAGE "**
+Rezultatul așteptat : Cand accesam butonul Register ar trebui sa afiseze mesajul **" Inregistrare reusita. Bine ai venit : Utilizator"**
+Rezultatul real : Cand accesam butonul Register afiseaza mesajul **"ERROR MESSAGE "**
 
 ![BUG](https://github.com/razvanandrei1974/QA-Automation-Project-Parabank-website/assets/144438182/1fc13578-125d-46a2-919f-633f52fa973a)
 
