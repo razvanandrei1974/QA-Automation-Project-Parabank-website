@@ -28,6 +28,7 @@ from selenium.webdriver.common.by import By
 
 from browser import Browser
 ```
+![Requirements Files](https://github.com/user-attachments/assets/d9e1a35f-8902-426f-ad33-59dba4cd5920)
 
 ## Create _Pages_ directory which includes the following files :
 
