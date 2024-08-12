@@ -1,6 +1,7 @@
 # _**QA-Automation-Project-Parabank-website**_ 🔄
 
-📍We created the automated test plan with Behave for the _"Login"_ menu , _"Register"_ menu abd _Open Account_ menu for the Parabank application.
+📍We created the automated test plan with Behave for the _"Login"_ menu , _"Register"_ menu abd _Open Account_ menu for
+the Parabank application.
 
 📍We used the Selenium library to automate the actions of navigation and interaction with the web interface.
 
@@ -10,8 +11,7 @@
 
 ![Install Behave](https://github.com/user-attachments/assets/a8c9c207-793a-4bdc-8552-82071da59d66)
 
-
-### pip install behave 
+### pip install behave
 
 🖥️ I installed Selenium Library
 
@@ -19,8 +19,6 @@
 
 ![Selenium](https://github.com/user-attachments/assets/21ebede8-3d86-49a0-9d0c-74ace9dbe3f1)
 ![Selenium Upgrade](https://github.com/user-attachments/assets/668da2f2-ed1d-49d0-b1b3-1f10a6c975dc)
-
-
 
 🖥️ I installed WebDriver for Python
 
@@ -33,7 +31,6 @@ from browser import Browser
 
 ## Create _Pages_ directory which includes the following files :
 
-
 ## $${\color{darkorange}login-page}$$
 
 ``ruby
@@ -42,12 +39,11 @@ from selenium.webdriver.common.by import By
 
 from browser import Browser
 
-
 class LoginPage(Browser):
-    USERNAME_FIELD_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[1]/input')
-    PASSWORD_FIELD_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[2]/input')
-    LOGIN_BUTTON_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[3]/input')
-    MESSAGE_ERROR_LABEL = (By.XPATH, '//*[@id="rightPanel"]/p')
+USERNAME_FIELD_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[1]/input')
+PASSWORD_FIELD_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[2]/input')
+LOGIN_BUTTON_SELECTOR = (By.XPATH, '/html/body/div[1]/div[3]/div[1]/div/form/div[3]/input')
+MESSAGE_ERROR_LABEL = (By.XPATH, '//*[@id="rightPanel"]/p')
 
     def navigate_to_login_page(self):
         self.driver.get("https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC")
@@ -63,7 +59,6 @@ class LoginPage(Browser):
 
     def get_error_message(self):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
-
 
 ## $${\color{darkorange}register-page}$$
 
@@ -175,20 +170,21 @@ def step_then_see_confirmation_message(context):
 
 ```
 
-
-
 ## 💻Scenario outlines
-Scenarios can be parametrized to cover multiple cases. These are called Scenario Outlines in Gherkin, and the variable templates are written using angular brackets.
+
+Scenarios can be parametrized to cover multiple cases. These are called Scenario Outlines in Gherkin, and the variable
+templates are written using angular brackets.
 
 Example :
+
 ## ▶️ Definition of test scenarios:
 
 1. Create _Features_ directory which includes the following files :
 
-  ## $${\color{green}login.features}$$
-   
-   ▶️ Functionality Menu Login with real and corect data.
-   
+## $${\color{green}login.features}$$
+
+▶️ Functionality Menu Login with real and corect data.
+
 ```ruby
   Feature: Login Feature
   Background:
@@ -202,10 +198,10 @@ Example :
     Then I should see an error message
 ```
 
-  ## $${\color{green}login1.features}$$
-   
-   ▶️ Functionality Menu Login with unreal data.
-   
+## $${\color{green}login1.features}$$
+
+▶️ Functionality Menu Login with unreal data.
+
 ```ruby
   Feature: Login Feature
   Background:
@@ -219,7 +215,7 @@ Example :
     Then I should see an error message
 ```
 
- ## $${\color{green}register.features}$$
+## $${\color{green}register.features}$$
 
  ```ruby
 Feature: Register Feature
@@ -246,6 +242,7 @@ Feature: Register Feature
     And I press the submit button
     Then I should see an error register message
 ```
+
 ## $${\color{green}open account.features}$$
 
 ```ruby
@@ -262,16 +259,25 @@ Feature: Open account
     And I submit the form
     Then I should see a confirmation message
 ```
+
 ## 💻Test setup
-Test setup is implemented within the Given section. Even though these steps are executed imperatively to apply possible side-effects, pytest-bdd is trying to benefit of the PyTest fixtures which is based on the dependency injection and makes the setup more declarative style.
 
-Many other BDD toolkits operate on a global context and put the side effects there. This makes it very difficult to implement the steps, because the dependencies appear only as the side-effects during run-time and not declared in the code. The "publish article" step has to trust that the article is already in the context, has to know the name of the attribute it is stored there, the type etc.
+Test setup is implemented within the Given section. Even though these steps are executed imperatively to apply possible
+side-effects, pytest-bdd is trying to benefit of the PyTest fixtures which is based on the dependency injection and
+makes the setup more declarative style.
 
-In pytest-bdd you just declare an argument of the step function that it depends on and the PyTest will make sure to provide it.
+Many other BDD toolkits operate on a global context and put the side effects there. This makes it very difficult to
+implement the steps, because the dependencies appear only as the side-effects during run-time and not declared in the
+code. The "publish article" step has to trust that the article is already in the context, has to know the name of the
+attribute it is stored there, the type etc.
+
+In pytest-bdd you just declare an argument of the step function that it depends on and the PyTest will make sure to
+provide it.
 
 Still side effects can be applied in the imperative style by design of the BDD.
 
-Example : 
+Example :
+
 ## 3. Create _Steps_ directory which includes the following files :
 
 ## 3.1. $${\color{darkorange}steps-login}$$
@@ -450,17 +456,27 @@ def step_then_see_confirmation_message(context):
 ```
 
 ## 💻Hooks
-pytest-bdd exposes several pytest hooks which might be helpful building useful reporting, visualization, etc. on top of it:
+
+pytest-bdd exposes several pytest hooks which might be helpful building useful reporting, visualization, etc. on top of
+it:
 
 * pytest_bdd_before_scenario(login, register, openaccount) - Called before scenario is executed
-- pytest_bdd_after_scenario(login, register, openaccount) - Called after scenario is executed (even if one of steps has failed)
-+ pytest_bdd_login_step(login, feature, step, step_func) - Called before step function is executed and it's arguments evaluated
-* pytest_bdd_register_step(register, feature, step, step_func) - Called before step function is executed and it's arguments evaluated
-- pytest_bdd_openaccount_step(openaccount, feature, step, step_func) - Called before step function is executed and it's arguments evaluated
 
+- pytest_bdd_after_scenario(login, register, openaccount) - Called after scenario is executed (even if one of steps has
+  failed)
+
++ pytest_bdd_login_step(login, feature, step, step_func) - Called before step function is executed and it's arguments
+  evaluated
+
+* pytest_bdd_register_step(register, feature, step, step_func) - Called before step function is executed and it's
+  arguments evaluated
+
+- pytest_bdd_openaccount_step(openaccount, feature, step, step_func) - Called before step function is executed and it's
+  arguments evaluated
 
 ## Reporting
-### We executed the tests with the order 
+
+### We executed the tests with the order
 
 behave -f html -o behave-report2000.html
 
