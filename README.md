@@ -33,7 +33,7 @@ from browser import Browser
 
 ## $${\color{darkorange}login-page}$$
 
-``ruby
+```ruby
 
 from selenium.webdriver.common.by import By
 
