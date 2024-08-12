@@ -31,7 +31,7 @@ from browser import Browser
 
 ## Create _Pages_ directory which includes the following files :
 
-### login.page
+### 📄 login.page
 
 ```ruby
 
@@ -61,7 +61,7 @@ MESSAGE_ERROR_LABEL = (By.XPATH, '//*[@id="rightPanel"]/p')
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
 ```
 
-### register.page
+### 📄register.page
 
 ```ruby
 from selenium.webdriver.common.by import By
@@ -132,7 +132,7 @@ class RegisterPage(Browser):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
 ```
 
-### openaccount.page
+### 📄openaccount.page
 
 ``` ruby
 from behave import given, when, then
@@ -182,7 +182,7 @@ Example :
 
 1. Create _Features_ directory which includes the following files :
 
-### login.features
+### 🟢login.features
 
 ▶️ Functionality Menu Login with real and corect data.
 
@@ -199,7 +199,7 @@ Example :
     Then I should see an error message
 ```
 
-### login1.features
+### 🟢 login1.features
 
 ▶️ Functionality Menu Login with unreal data.
 
@@ -216,7 +216,7 @@ Example :
     Then I should see an error message
 ```
 
-### register.features
+### 🟢 register.features
 
  ```ruby
 Feature: Register Feature
@@ -244,7 +244,7 @@ Feature: Register Feature
     Then I should see an error register message
 ```
 
-### openaccount.features
+### 🟢 openaccount.features
 
 ```ruby
 Feature: Open account
@@ -281,7 +281,7 @@ Example :
 
 ##  Create _Steps_ directory which includes the following files :
 
-### steps.login
+### 🔀 steps.login
 
 ``` ruby
 import time
@@ -323,7 +323,7 @@ def steps_impl(context):
 #     assert expected_error_message in actual_error_message
 ```
 
-### steps.register
+### 🔀 steps.register
 
 ``` ruby
 
@@ -424,7 +424,7 @@ def step_impl(context):
     assert expected_error_message in actual_error_message
 ```
 
-### steps.openaccount
+### 🔀 steps.openaccount
 
 ``` ruby
 
