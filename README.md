@@ -31,7 +31,7 @@ from browser import Browser
 
 ## Create _Pages_ directory which includes the following files :
 
-## $${\color{darkorange}login-page}$$
+### login.page
 
 ```ruby
 
@@ -59,8 +59,9 @@ MESSAGE_ERROR_LABEL = (By.XPATH, '//*[@id="rightPanel"]/p')
 
     def get_error_message(self):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
+```
 
-## $${\color{darkorange}register-page}$$
+### register.page
 
 ```ruby
 from selenium.webdriver.common.by import By
@@ -131,7 +132,7 @@ class RegisterPage(Browser):
         return self.driver.find_element(*self.MESSAGE_ERROR_LABEL).text
 ```
 
-## $${\color{darkorange}openaccount-page}$$
+### openaccount.page
 
 ``` ruby
 from behave import given, when, then
@@ -181,7 +182,7 @@ Example :
 
 1. Create _Features_ directory which includes the following files :
 
-## $${\color{green}login.features}$$
+### login.features
 
 ▶️ Functionality Menu Login with real and corect data.
 
@@ -198,7 +199,7 @@ Example :
     Then I should see an error message
 ```
 
-## $${\color{green}login1.features}$$
+### login1.features
 
 ▶️ Functionality Menu Login with unreal data.
 
@@ -215,7 +216,7 @@ Example :
     Then I should see an error message
 ```
 
-## $${\color{green}register.features}$$
+### register.features
 
  ```ruby
 Feature: Register Feature
@@ -243,7 +244,7 @@ Feature: Register Feature
     Then I should see an error register message
 ```
 
-## $${\color{green}open account.features}$$
+### openaccount.features
 
 ```ruby
 Feature: Open account
@@ -278,9 +279,9 @@ Still side effects can be applied in the imperative style by design of the BDD.
 
 Example :
 
-## 3. Create _Steps_ directory which includes the following files :
+##  Create _Steps_ directory which includes the following files :
 
-## 3.1. $${\color{darkorange}steps-login}$$
+### steps.login
 
 ``` ruby
 import time
@@ -322,7 +323,7 @@ def steps_impl(context):
 #     assert expected_error_message in actual_error_message
 ```
 
-## 3.2. $${\color{darkorange}steps-register}$$
+### steps.register
 
 ``` ruby
 
@@ -423,7 +424,7 @@ def step_impl(context):
     assert expected_error_message in actual_error_message
 ```
 
-## 3.3. $${\color{darkorange}steps-openaccount}$$
+### steps.openaccount
 
 ``` ruby
 
